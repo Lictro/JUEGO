@@ -91,6 +91,7 @@ label start:
     n"RASENGAN"
     hide nar3
     hide kak2
+    hide kak3
     show kak4
     k"ugh!!!"
     n"Le di!!"

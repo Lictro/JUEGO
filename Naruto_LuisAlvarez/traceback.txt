@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'images/kak2.jpg'>:
-  File "game/script.rpy", line 75, in script
-    show sasu3
-IOError: Couldn't find file 'images/kak2.jpg'.
+While running game code:
+  File "game/script.rpy", line 34, in script
+    x "Hola, yo soy el narrador, les contare la historia sobre la batalla de Naruto y Sasuke contra Kakashi"
+IOError: Couldn't find file 'images/kana.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 75, in script
-    show sasu3
+  File "game/script.rpy", line 34, in script
+    x "Hola, yo soy el narrador, les contare la historia sobre la batalla de Naruto y Sasuke contra Kakashi"
   File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\ast.py", line 594, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\exports.py", line 1021, in say
@@ -24,53 +24,19 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\core.py", line 2285, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\core.py", line 2622, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\core.py", line 1725, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 379, in renpy.display.render.render_screen (gen\renpy.display.render.c:5907)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3066)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3066)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3066)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1888)
-    cr = render(child, widtho, heighto, st - self.child_st_base, at)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\image.py", line 218, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\image.py", line 90, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3066)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2683)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\im.py", line 478, in render
-    im = cache.get(self)
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\im.py", line 200, in get
-    surf = image.load()
-  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\im.py", line 529, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\display\core.py", line 2572, in interact_core
+    renpy.audio.audio.interact()
+  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\audio\audio.py", line 790, in interact
+    periodic()
+  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\audio\audio.py", line 724, in periodic
+    c.periodic()
+  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\audio\audio.py", line 340, in periodic
+    topf = load(self.file_prefix + topq.filename + self.file_suffix)
+  File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\audio\audio.py", line 74, in load
+    rv = renpy.loader.load(fn)
   File "C:\Users\Home\Desktop\PROGRAMACION_1\SoftwareProgra1\renpy-6.99.5-sdk\renpy\loader.py", line 512, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'images/kak2.jpg'.
+IOError: Couldn't find file 'images/kana.ogg'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.5.602

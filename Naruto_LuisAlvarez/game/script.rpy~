@@ -18,6 +18,7 @@ image bg kak2 = "images/kaka2.png"
 image bg nar3 = "images/nar3.png"
 image bg sasu3 = "images/sasu3.png"
 image bg kak3 = "images/kaka3.png"
+image bg kak5 = "images/kaka7.png"
 # Declare characters used by this game.
 # - Declara los personajes usados en el juego como en el 
 #   ejemplo.
@@ -88,6 +89,15 @@ label start:
     k"¿¿QUE??"
     show nar3 at left
     n"RASENGAN"
+    hide nar3
+    hide kak2
+    show kak4
+    k"ugh!!!"
+    n"Le di!!"
+    hide kak4
+    show kak5
+    k"Estoy muy feliz de progreso, Naruto-Sasuke"
+    
     stop music 
     return
     
